@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+            $(function () {
+                $("#show1").click(function () {
+                    $("#theDiv").show("slow");
+                });
+
+                $("#show2").click(function () {
+                    $("#theDiv").show("normal");
+                });
+
+                $("#show3").click(function () {
+                    $("#theDiv").show("fast");
+                });
+
+                $("#show4").click(function () {
+                    $("#theDiv").show(5000);
+                });
+
+                $("#hide1").click(function () {
+                    $("#theDiv").hide("slow");
+                });
+
+                $("#hide2").click(function () {
+                    $("#theDiv").hide("normal");
+                });
+
+                $("#hide3").click(function () {
+                    $("#theDiv").hide("fast");
+                });
+
+                $("#hide4").click(function () {
+                    $("#theDiv").hide(5000);
+                });
+
+                $("#toggle1").click(function () {
+                    $("#theDiv").toggle("slow");
+                });
+
+                $("#toggle2").click(function () {
+                    $("#theDiv").toggle("normal");
+                });
+
+                $("#toggle3").click(function () {
+                    $("#theDiv").toggle("fast");
+                });
+
+                $("#toggle4").click(function () {
+                    $("#theDiv").toggle(5000);
+                });
+            });
+        </script>
+
+        <style type="text/css">
+           #theDiv {
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                padding: 20px;
+                background: blue;
+                color:yellow;
+                border: 2px solid black;
+                cursor: pointer;
+            }
+
+            p, span {
+                font-size: 16pt;
+            }
+
+            button {
+                margin: 5px;
+            }
+        </style>
+
+        <p>
+            Showing and Hiding an Element
+        </p>
+
+        <p id="theDiv">
+            tolooco.ir
+        </p>
+
+        <button id="show1">
+            Show
+        </button>
+        <button id="show2">
+            Show
+        </button>
+        <button id="show3">
+            Show
+        </button>
+        <button id="show4">
+            Show
+        </button>
+
+        <br />
+
+        <button id="hide1">
+            Hide
+        </button>
+        <button id="hide2">
+            Hide
+        </button>
+        <button id="hide3">
+            Hide
+        </button>
+        <button id="hide4">
+            Hide
+        </button>
+
+        <br />
+
+        <button id="toggle1">
+            Toggle
+        </button>
+        <button id="toggle2">
+            Toggle
+        </button>
+        <button id="toggle3">
+            Toggle
+        </button>
+        <button id="toggle4">
+            Toggle
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/jquery-2.1.1.js"></script>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+                $(function () {
+                    $("#animate").click(function () {
+                        $("#theDiv").animate({ left: "200", width: "300px", fontSize: "24pt" }, 1000);
+                    });
+                });
+        </script>
+        <style type="text/css">
+            div#theDiv {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                padding: 20px;
+                background: cyan;
+                border: 2px solid black;
+                cursor: pointer;
+            }
+
+            p, span {
+                font-size: 16pt;
+            }
+
+            button {
+                margin: 5px;
+            }
+        </style>
+
+        <p>
+            Animating an Element
+        </p>
+
+        <div id="theDiv">
+            Animate Me
+        </div>
+
+        <button id="animate">
+            Animate
+        </button>
+
+    </div>
+
+</body>
+</html>

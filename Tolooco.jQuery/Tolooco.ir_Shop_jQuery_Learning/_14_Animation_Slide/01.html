@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/jquery-2.1.1.js"></script>
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+                $(function () {
+                    $("#slideUp").click(function () {
+                        $("#theDiv").slideUp(5000, function () {
+                            alert("Done Sliding Up!");
+                        });
+                    });
+
+                    $("#slideDown").click(function () {
+                        $("#theDiv").slideDown(5000, function () {
+                            alert("Done Sliding Down!");
+                        });
+                    });
+                });
+        </script>
+
+        <style type="text/css">
+            div#theDiv {
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                padding: 20px;
+                background: blue;
+                color:yellow;
+                border: 2px solid black;
+                cursor: pointer;
+            }
+
+            p, span {
+                font-size: 16pt;
+            }
+
+            button {
+                margin: 5px;
+            }
+        </style>
+
+        <p>
+            Fading an Element
+        </p>
+
+        <div id="theDiv">
+            tolooco.ir
+        </div>
+
+        <button id="slideUp">
+            Slide Up
+        </button>
+        <button id="slideDown">
+            Slide Down
+        </button>
+    </div>
+
+</body>
+</html>
